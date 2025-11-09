@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allStock - Financial Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>allStock</h1>
+                <p class="tagline">Financial Intelligence at Your Fingertips</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Bar -->
+            <div class="search-section">
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search stocks, currencies, or tech news..."
+                        autocomplete="off"
+                    />
+                    <button id="searchBtn" class="search-btn">Search</button>
+                </div>
+                <div class="quick-actions">
+                    <button class="quick-btn" data-symbol="AAPL">Apple</button>
+                    <button class="quick-btn" data-symbol="GOOGL">Google</button>
+                    <button class="quick-btn" data-symbol="MSFT">Microsoft</button>
+                    <button class="quick-btn" data-symbol="TSLA">Tesla</button>
+                    <button class="quick-btn" data-symbol="NVDA">NVIDIA</button>
+                </div>
+            </div>
+
+            <!-- Results Container -->
+            <div id="resultsContainer" class="results-container">
+                <div class="welcome-message">
+                    <h2>Welcome to allStock</h2>
+                    <p>Get real-time stock prices, currency exchange rates, and the latest tech news.</p>
+                    <p class="hint">Try searching for a stock symbol or click one of the quick actions above.</p>
+                </div>
+            </div>
+
+            <!-- Stock Data Section -->
+            <div id="stockData" class="stock-data hidden"></div>
+
+            <!-- Currency Exchange Section -->
+            <div id="currencyData" class="currency-data hidden"></div>
+
+            <!-- News Section -->
+            <div id="newsSection" class="news-section hidden">
+                <h2 class="section-title">Latest Tech & Stock News</h2>
+                <div id="newsContainer" class="news-container"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 allStock. Powered by Yahoo Finance & Real-time Data</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
